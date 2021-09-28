@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education and Work Experience</title>
+    <link rel="stylesheet" href="education.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <ul class="navbar-links">
+          <header class="nav-header">
+            <img src="./byron1.jpeg" alt="Me"> <span><h1>Byron Lee Tinker</h1></span><span>Software Developer</span>
+            <div class="icons">
+              <li><a href="https://github.com/byronleetinker" target="_blank"><span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span></a></li>
+              <li><a href="https://app.netlify.com/teams/byronleetinker/overview" target="_blank"><span class="iconify" data-icon="cib:netlify" data-inline="false"></span></a></li>
+              <li><a href="https://replit.com/@byronleetinker" target="_blank"><span class="iconify" data-icon="simple-icons:replit" data-inline="false"></span></a></li>
+              <li><a href="https://codepen.io/byronleetinker" target="_blank"><span class="iconify" data-icon="akar-icons:codepen-fill" data-inline="false"></span></a></li>
+            </div>
+        </header>
+          <li class="navbar-link"><a href="index.html" class="navbar-anchor">About Me</a></li>
+          <li class="navbar-link"><a href="education.html" class="navbar-anchor">Education and Work</a></li>
+          <li class="navbar-link"><a href="skills.html" class="navbar-anchor">My Skills</a></li>
+          <li class="navbar-link"><a href="projects.html" class="navbar-anchor">Projects</a></li>
+          <li class="navbar-link"><a href="testimonials.html" class="navbar-anchor">Testimonials</a></li>
+          <li class="navbar-link"><a href="#Contact" class="navbar-anchor">Contact Me</a></li>
+        </ul>
+        <button class="navbar-button" onclick="toggleNavbar()"><i class="fas fa-bars"></i></button>
+      </nav>
+    <section id="Work">
+        <h1 class="work-container-heading">Educational Background</h1>
+        <div class="work-container">
+  <div data-aos="fade-down-right">
+            <div class="education"> <img src="./school.png" alt="school">
+      <span>Zwaanswyk High School.<br>Grade 12: Bachelor's pass.</span> 
+           </div>
+         </div>
+      </section>
+      <footer>Made by Byron Lee Tinker.
+        <div class="icons2">
+          <li><a href="https://github.com/byronleetinker" target="_blank"><span>GitHub</span></a></li>
+          <li><a href="https://app.netlify.com/teams/byronleetinker/overview" target="_blank"><span>Netlify</span></a></li>
+          <li><a href="https://replit.com/@byronleetinker" target="_blank"><span>Replit</span></a></li>
+          <li><a href="https://codepen.io/byronleetinker" target="_blank"><span>CodePen</span></a></li>
+        </div>
+      </footer>
+      <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+      <script
+      src="https://kit.fontawesome.com/63e7421244.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function toggleNavbar() {
+        document
+          .getElementsByClassName("navbar-links")[0]
+          .classList.toggle("active");
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+</html>

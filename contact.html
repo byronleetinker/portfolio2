@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./contact.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <ul class="navbar-links">
+          <header class="nav-header">
+            <img src="./byron1.jpeg" alt="Me"> <span><h1>Byron Lee Tinker</h1></span><span>Frontend Developer</span>
+            <div class="icons">
+              <li><a href="https://github.com/byronleetinker" target="_blank"><span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span></a></li>
+              <li><a href="https://app.netlify.com/teams/byronleetinker/overview" target="_blank"><span class="iconify" data-icon="cib:netlify" data-inline="false"></span></a></li>
+              <li><a href="https://replit.com/@byronleetinker" target="_blank"><span class="iconify" data-icon="simple-icons:replit" data-inline="false"></span></a></li>
+              <li><a href="https://codepen.io/byronleetinker" target="_blank"><span class="iconify" data-icon="akar-icons:codepen-fill" data-inline="false"></span></a></li>
+            </div>
+        </header>
+        <div class="links">
+          <li class="navbar-link"><a href="index.html" class="navbar-anchor">About Me</a></li>
+          <li class="navbar-link"><a href="education.html" class="navbar-anchor">Education and Work</a></li>
+          <li class="navbar-link"><a href="skills.html" class="navbar-anchor">My Skills</a></li>
+          <li class="navbar-link"><a href="projects.html" class="navbar-anchor">Projects</a></li>
+          <li class="navbar-link"><a href="testimonials.html" class="navbar-anchor">Testimonials</a></li>
+          <li class="navbar-link"><a href="#Contact" class="navbar-anchor">Contact Me</a></li>
+        </div>
+        </ul>
+        <button class="navbar-button" onclick="toggleNavbar()"><i class="fas fa-bars"></i></button>
+      </nav>
+    <section id="Contact">
+        <form id="form" action="https://formspree.io/f/xbjqlwjg" method="POST">
+          <div class="contact-input">
+            <div class="header1"><h2>Contact Me</h2><span> Get in Touch</span></div>
+            <div class="image1">
+            <img src="map.png" alt="map"/> 
+          </div>
+            <div class="contact-icons">
+                <div class="phone"><i class="fas fa-mobile-alt"></i><p>0678633051</p></div>
+                <div class="email"><i class="far fa-envelope"></i><p>byronleetinker03@gmail.com</p></div>
+                <div class="address"><i class="fas fa-map-pin"></i><p>Cape Town, South Africa</p></div> 
+            </div>
+          </div>
+        <form class="form">
+          <div class="contact-form">
+            <div class="contact-info">
+              <label class="contact-label"> Your name:</label>
+              <input
+                class="contact-bar"
+                type="name"
+                name="name"
+                required
+                placeholder="Name"
+              />
+            </div>
+            
+          </div>
+            <div class="contact-info">
+              <label class="contact-label"> Your phone number:</label>
+              <input
+                class="contact-bar"
+                type="phone number"
+                name="number"
+                required
+                placeholder="Phone number"
+              />
+            </div>
+            <div class="contact-message">
+              <label class="contact-label"> Your message:</label>
+              <input
+                class=" contact-bar"
+                type="message"
+                name="message"
+                required
+                placeholder="Your message"
+              >
+            </div>
+            <div class="contact-info">
+              <label class="contact-label"> Your email:</label>
+              <input
+                class="contact-bar"
+                type="email"
+                name="_replyto"
+                required
+                placeholder="Email"
+              />
+              
+            <button class="contact-button" type="submit">SUBMIT</button>
+          </div>
+        </form>
+    </section>
+    <footer>Made by Byron Lee Tinker.
+        <div class="icons2">
+          <li><a href="https://github.com/byronleetinker" target="_blank"><span>GitHub</span></a></li>
+          <li><a href="https://app.netlify.com/teams/byronleetinker/overview" target="_blank"><span>Netlify</span></a></li>
+          <li><a href="https://replit.com/@byronleetinker" target="_blank"><span>Replit</span></a></li>
+          <li><a href="https://codepen.io/byronleetinker" target="_blank"><span>CodePen</span></a></li>
+        </div>
+      </footer>
+      <script
+      src="https://kit.fontawesome.com/63e7421244.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function toggleNavbar() {
+        document
+          .getElementsByClassName("navbar-links")[0]
+          .classList.toggle("active");
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  </body>
+</html>

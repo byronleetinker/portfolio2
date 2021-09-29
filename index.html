@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jquery-2.1.4.js"></script>
     <title>Byron Lee Tinker's Portfolio</title>
     <link
     rel="stylesheet"
@@ -66,7 +67,7 @@
                 download
                 >Download CV</a
               >
-              <a href="#Contact" class="btn1">Contact</a>
+              <a href="contact.html" class="btn1">Contact</a>
             </div>
           </header><img src="./Byron-lee Tinker (1)-min.JPG" alt="my-profile" />
         </div>
@@ -112,6 +113,9 @@
       <li><a href="https://codepen.io/byronleetinker" target="_blank"><span>CodePen</span></a></li>
     </div>
   </footer>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
 <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
@@ -154,6 +158,11 @@
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script>
+      $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("3s");
+      });
+  </script>
   </body>
   <script>
     AOS.init();

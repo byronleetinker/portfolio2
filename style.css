@@ -377,6 +377,9 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+#myDiv {
+  display: none;
+}
 .loader {
   display: inline-block;
   width: 50px;
@@ -387,12 +390,13 @@ h1 {
   border-right: 5px solid #007ced;
   border-bottom: 5px solid #007ced;
   animation: loader 2s infinite ease;
+  z-index: 1;
 }
 .loader-inner {
   vertical-align: top;
   display: inline-block;
   width: 100%;
-  background: #fff;
+  background: linear-gradient(0deg, #007ced, #fff);
   animation: loader-inner 2s infinite ease-in;
 }
 @keyframes loader {

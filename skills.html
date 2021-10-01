@@ -7,7 +7,11 @@
     <title>My Skills</title>
     <link rel="stylesheet" href="./skills.css" />
   </head>
-  <body>
+  <body onload="myFunction()">
+    <div id="loader" class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <div class="bodyContainer" id="myDiv" >
     <nav class="navbar">
         <ul class="navbar-links">
           <header class="nav-header">
@@ -20,7 +24,7 @@
             </div>
         </header>
           <li class="navbar-link"><a href="index.html" class="navbar-anchor">About Me</a></li>
-          <li class="navbar-link"><a href="education.html" class="navbar-anchor">Education and Work</a></li>
+          <li class="navbar-link"><a href="education.html" class="navbar-anchor">Education and Experience</a></li>
           <li class="navbar-link"><a href="skills.html" class="navbar-anchor">My Skills</a></li>
           <li class="navbar-link"><a href="projects.html" class="navbar-anchor">Projects</a></li>
           <li class="navbar-link"><a href="testimonials.html" class="navbar-anchor">Testimonials</a></li>
@@ -54,6 +58,7 @@
           <li><a href="https://codepen.io/byronleetinker" target="_blank"><span>CodePen</span></a></li>
         </div>
       </footer>
+    </div>
     <script
     src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
@@ -77,8 +82,17 @@
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-<script>
-  AOS.init();
-</script>
   </body>
+  <script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
 </html>

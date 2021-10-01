@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="education.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body>
+  <body onload="myFunction()">
+    <div id="loader" class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <div class="bodyContainer" id="myDiv" >
     <nav class="navbar">
         <ul class="navbar-links">
           <header class="nav-header">
@@ -21,7 +25,7 @@
             </div>
         </header>
           <li class="navbar-link"><a href="index.html" class="navbar-anchor">About Me</a></li>
-          <li class="navbar-link"><a href="education.html" class="navbar-anchor">Education and Work</a></li>
+          <li class="navbar-link"><a href="education.html" class="navbar-anchor">Education and Experience</a></li>
           <li class="navbar-link"><a href="skills.html" class="navbar-anchor">My Skills</a></li>
           <li class="navbar-link"><a href="projects.html" class="navbar-anchor">Projects</a></li>
           <li class="navbar-link"><a href="testimonials.html" class="navbar-anchor">Testimonials</a></li>
@@ -30,13 +34,36 @@
         <button class="navbar-button" onclick="toggleNavbar()"><i class="fas fa-bars"></i></button>
       </nav>
     <section id="Work">
+      <div class="item-3">
+      <div class="ex-container">
+<div data-aos="fade-down-right">
+          <div class="experience1"> <img src="./lc.jpeg" alt="school">
+            <span> <p class="date">Sep 2021 - Present</p> LC Studio.<br>Web Application Developer.</span> 
+         </div>
+       </div>
+      </div>
+      </div>
+      <div class="item-2">
+        <h1 class="ex-container-heading">Experience</h1>
+        <div class="ex-container">
+  <div data-aos="fade-down-right">
+            <div class="experience"> <img src="./ls" alt="school">
+      <span> <p class="date">April 2021 - Sep 2021</p> Life Choices Coding Academy.<br>Software and Web Development.</span> 
+           </div>
+         </div>
+        </div>
+        </div>
+      <div class="Line"></div>
+      <div class="item-1">
         <h1 class="work-container-heading">Educational Background</h1>
         <div class="work-container">
   <div data-aos="fade-down-right">
             <div class="education"> <img src="./school.png" alt="school">
-      <span>Zwaanswyk High School.<br>Grade 12: Bachelor's pass.</span> 
+      <span> <p class="date">2016 - 2020</p> Zwaanswyk High School.<br>Grade 12: Bachelor's pass.</span> 
            </div>
          </div>
+        </div>
+      </div>
       </section>
       <footer>Made by Byron Lee Tinker.
         <div class="icons2">
@@ -46,6 +73,7 @@
           <li><a href="https://codepen.io/byronleetinker" target="_blank"><span>CodePen</span></a></li>
         </div>
       </footer>
+    </div>
       <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
@@ -69,9 +97,22 @@
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
-  <script>
-    AOS.init();
-  </script>
+  
+   <script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 500);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
   </body>
 </html>

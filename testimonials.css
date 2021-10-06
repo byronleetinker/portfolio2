@@ -9,6 +9,10 @@ body {
   font-family: "Anton", sans-serif;
 }
 
+/* .navbar {
+  z-index: 100;
+} */
+
 .navbar-links {
   color: whitesmoke;
   display: flex;
@@ -23,6 +27,7 @@ body {
   align-items: center;
   font-family: sans-serif;
   transition: all 0.3s linear;
+  z-index: 10;
 }
 
 .navbar-links.active {
@@ -165,13 +170,13 @@ h1 {
   border-radius: 20px;
   border-left: 5px solid #007ced;
   width: 30vw;
-  height: 50vh;
-  padding: 30px;
+  height: 45vh;
+  padding: 20px;
 }
 
 .info {
-  margin-right: -10px;
-  margin-top: 20px;
+  margin-right: 0px;
+  margin-top: 10px;
 }
 
 .header {
@@ -210,6 +215,7 @@ footer {
   align-items: center;
   margin-top: -30px;
   font-weight: bolder;
+  z-index: 100;
 }
 
 .icons2 {

@@ -17,6 +17,7 @@ body {
   background: #31373d;
   position: fixed;
   left: -100%;
+  z-index: 100;
   width: 10%;
   height: 100vh;
   justify-content: flex-start;
